@@ -10,9 +10,12 @@ A Chrome extension that enhances reading experience by providing customizable te
 - Performance-optimized implementation
 - Supports various content types (articles, blog posts, main content areas)
 
-## Installation# TextAlign
+## Installation
 
-A Chrome extension that enhances reading experience by providing customizable text alignment controls for web content.
+1. Clone this repository
+2. Open Chrome and navigate to `chrome://extensions/`
+3. Enable "Developer mode" in the top right corner
+4. Click "Load unpacked"
 
 ## License
 
