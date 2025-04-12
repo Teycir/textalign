@@ -10,43 +10,30 @@ A Chrome extension that enhances reading experience by providing customizable te
 - Performance-optimized implementation
 - Supports various content types (articles, blog posts, main content areas)
 
-## Installation
+## Installation# TextAlign
 
-1. Clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" in the top right corner
-4. Click "Load unpacked" and select the extension directory
-
-## Usage
-
-After installation:
-
-1. Click the extension icon in your browser toolbar
-2. Select your preferred text alignment option
-3. Toggle the optimal width setting if desired
-4. Changes will be applied immediately to the current page
-
-## Technical Details
-
-The extension uses:
-- Chrome Storage API for saving user preferences
-- MutationObserver for detecting dynamic content changes
-- Performance-optimized stylesheet injection
-- Debounced event handling for better performance
-- Custom font-face settings for improved vertical alignment
-
-## Development
-
-To modify the extension:
-
-1. Make changes to the source files
-2. Refresh the extension in `chrome://extensions/`
-3. Reload the target page to see your changes
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+A Chrome extension that enhances reading experience by providing customizable text alignment controls for web content.
 
 ## License
 
-[Add your chosen license here]
+MIT License
+
+Copyright (c) 2025 Teycitek
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
