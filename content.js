@@ -7,11 +7,10 @@ let styleElement = null;
 // Load settings once and cache them
 async function loadSettings() {
   return new Promise(resolve => {
-    chrome.storage.local.get(['alignment', 'optimizeWidth', 'textRendering'], data => {
+    chrome.storage.local.get(['alignment', 'optimizeWidth'], data => {
       settings = {
         alignment: data.alignment || 'left',
-        optimizeWidth: data.optimizeWidth !== undefined ? data.optimizeWidth : false,
-        textRendering: data.textRendering || 'auto'
+        optimizeWidth: data.optimizeWidth !== undefined ? data.optimizeWidth : false
       };
       resolve(settings);
     });
@@ -41,7 +40,6 @@ function createStylesheet() {
   
   css += `${selectors} {
     text-align: ${settings.alignment};
-    text-rendering: ${settings.textRendering};
   }`;
   
   if (settings.optimizeWidth) {

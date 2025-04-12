@@ -1,22 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
   const alignmentSelect = document.getElementById('alignment');
   const optimizeWidthCheckbox = document.getElementById('optimizeWidth');
-  const textRenderingSelect = document.getElementById('textRendering');
   const applyButton = document.getElementById('apply');
   const statusText = document.getElementById('status');
 
   // Load saved settings
   chrome.storage.local.get(
-    ['alignment', 'optimizeWidth', 'textRendering'], 
+    ['alignment', 'optimizeWidth'], 
     function(data) {
       if (data.alignment) {
         alignmentSelect.value = data.alignment;
       }
       if (data.optimizeWidth !== undefined) {
         optimizeWidthCheckbox.checked = data.optimizeWidth;
-      }
-      if (data.textRendering) {
-        textRenderingSelect.value = data.textRendering;
       }
     }
   );
@@ -29,8 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const settings = {
       alignment: alignmentSelect.value,
-      optimizeWidth: optimizeWidthCheckbox.checked,
-      textRendering: textRenderingSelect.value
+      optimizeWidth: optimizeWidthCheckbox.checked
     };
     
     // Save to storage

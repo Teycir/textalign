@@ -2,7 +2,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   // Set default settings on installation
   chrome.storage.local.get(
-    ['alignment', 'optimizeWidth', 'textRendering'],
+    ['alignment', 'optimizeWidth'],
     function(data) {
       const defaults = {};
       
@@ -12,10 +12,6 @@ chrome.runtime.onInstalled.addListener(() => {
       
       if (data.optimizeWidth === undefined) {
         defaults.optimizeWidth = false;
-      }
-      
-      if (!data.textRendering) {
-        defaults.textRendering = 'auto';
       }
       
       if (Object.keys(defaults).length > 0) {
