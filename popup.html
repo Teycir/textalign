@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TextAlign</title>
+  <style>
+    body {
+      width: 280px;
+      padding: 15px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #333;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .logo {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .option {
+      margin: 15px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    select, button {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    select {
+      background-color: #f5f5f5;
+    }
+    button {
+      background: #4285f4;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin-top: 15px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: background-color 0.2s;
+    }
+    button:hover {
+      background: #3367d6;
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+    }
+    .checkbox-container input {
+      margin-right: 8px;
+    }
+    #status {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 14px;
+      height: 20px;
+    }
+    .hint {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icons/align.png" alt="TextAlign logo" class="logo">
+    <h2>TextAlign</h2>
+  </div>
+  
+  <div class="option">
+    <label for="alignment">Text Alignment:</label>
+    <select id="alignment">
+      <option value="left">Left Aligned</option>
+      <option value="right">Right Aligned</option>
+      <option value="justify">Justified</option>
+      <option value="center">Centered</option>
+    </select>
+  </div>
+  
+  <div class="option">
+    <label for="textRendering">Text Rendering:</label>
+    <select id="textRendering">
+      <option value="auto">Auto (Default)</option>
+      <option value="optimizeSpeed">Optimize Speed</option>
+      <option value="optimizeLegibility">Optimize Legibility</option>
+      <option value="geometricPrecision">Geometric Precision</option>
+    </select>
+    <div class="hint">Legibility enhances readability but may affect performance</div>
+  </div>
+  
+  <div class="option">
+    <div class="checkbox-container">
+      <input type="checkbox" id="optimizeWidth">
+      <label for="optimizeWidth">Optimize Reading Width</label>
+    </div>
+    <div class="hint">Sets width to ~66 characters for improved readability</div>
+  </div>
+  
+  <button id="apply">Apply Settings</button>
+  <div id="status"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
