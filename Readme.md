@@ -8,6 +8,7 @@ A Chrome extension that enhances reading experience by providing customizable te
     <!-- You can adjust the width attribute as needed -->
   </a>
 </div>  
+
 ## Features
 
 - Customizable text alignment (left, center, right, justify)
