@@ -1,9 +1,9 @@
 # TextAlign
 
 A Chrome extension that enhances reading experience by providing customizable text alignment controls for web content.
+
 [![Watch the video](https://img.youtube.com/vi/Bv2s-UU64CQ/hqdefault.jpg)](https://www.youtube.com/watch?v=Bv2s-UU64CQ)
   
-</iframe>
 ## Features
 
 - Customizable text alignment (left, center, right, justify)
