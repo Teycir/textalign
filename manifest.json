@@ -3,7 +3,7 @@
   "name": "TextAlign",
   "version": "1.0",
   "description": "Optimize text alignment for better reading based on your preferences",
-  "permissions": ["storage", "scripting", "activeTab"],
+  "permissions": ["storage", "tabs"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",
