@@ -2,6 +2,13 @@
 
 A Chrome extension that enhances reading experience by providing customizable text alignment controls for web content.
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=Bv2s-UU64CQ" target="_blank">
+    <img src="https://img.youtube.com/vi/Bv2s-UU64CQ/hqdefault.jpg" alt="Watch the video" width="480" /> 
+    <!-- You can adjust the width attribute as needed -->
+  </a>
+</div>  
+
 ## Features
 
 - Customizable text alignment (left, center, right, justify)
